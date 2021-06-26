@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר | Drink-It</title>
+    <meta name="description" content="עמוד צור קשר בו ניתן לפנות לצוות האתר" />
+    <meta name="keywords" content="צור קשר" />
+    <meta name="author" content="חן כהן, עדן אברמוביץ, גל מרדכי ומאי לוי" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js"></script>
+    <link rel="icon" href="photos/glasslogo.png" sizes="16xp" type="image/svg+xml">
+
+</head>
+<body onload="tab_nav()">
+    <main>
+        <div id="container">
+            <article>
+                <div id="skip">
+                    <a href="#content-anchor">עבור לתוכן</a>
+                    <!--לשים קישור לאיפה אנחנו רוצים שיגיע-->
+                </div>
+                <header>
+                    <a name="nav-anchor" class="accessibility"></a>
+                    <nav role="navigation" class="background" aria-label="תפריט ניווט ראשי">
+                        <ul>
+                            <li>
+                                <a href="homePage.html">
+                                    <img id="logo" alt="לוגו -drink it- מעבר לדף הבית " src="photos/logo.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">מידע למתחילים</a>
+                                <ul>
+                                    <li>
+                                        <a href="glasses.html">כוסות הגשה</a>
+                                    </li>
+                                    <li>
+                                        <a href="TOOLSandAction.html">כלים ופעולות לברמן</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">סוגי אלכוהול</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="noClick" href="#">פירות הדר</a>
+                                <ul>
+                                    <li>
+                                        <a class="notActive" href="#">אשכולית</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">לימון</a>
+                                    </li>
+                                    <li>
+                                        <a href="orange.html"> תפוז</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="noClick" href="#">פירות יער</a>
+                                <ul>
+                                    <li>
+                                        <a class="notActive" href="#">אוכמניות</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">דובדבנים</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">חמוציות</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">פטל</a>
+                                    </li>
+                                    <li>
+                                        <a href="strawberry.html">תות</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="noClick" href="#">פירות אקזוטים</a>
+                                <ul>
+                                    <li>
+                                        <a class="notActive" href="#">אננס</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">ליצ'י</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">פסיפלורה</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">קוקוס</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">קווי</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="noClick" href="#">שילובים נועזים</a>
+                                <ul>
+                                    <li>
+                                        <a class="notActive" href="#">חמוץ</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">מתוק</a>
+                                    </li>
+                                    <li>
+                                        <a class="notActive" href="#">מר</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </article>
+            <article>
+                <div class="right">
+                    <p class="txtSBS"><a href="homepage.html" class="kishor">דף הבית</a></p>
+                    <p class="txtSBS">>></p>
+                    <p class="txtSBS">צור קשר</p>
+                </div>
+                <a id="content-anchor"></a>
+                <!--<עמוד צור קשר">-->
+                <h1 class="contact">צור קשר</h1>
+                <br />
+
+                <div id="pnia">
+                    <div>
+                        <p>
+                            נתקלתם בבעיה באתר?
+                            יש לכם מתכון ממולץ?
+                            <br />
+                            <br />
+                            נשמח שתכתבו לנו!
+                            <br />
+                            <br />
+                        </p>
+                    </div>
+
+                    <form method="post" id="form">
+                        <!---===STR======== טופס יצירת קשר ==============-->
+                        <input type="hidden" id="myEmail" name="name" value="maylevi06@gmail.com" />
+
+                        <div id="zorkeser">
+
+                            <div>
+                                <label for="fullname">
+                                    <span class="red">*</span> שם מלא:
+                                </label>
+                                <br />
+                                <input type="text" id="fullname" name="fullname" required aria-required="true"
+                                       autocomplete="on" role="alert" title="הכנס את שמך" aria-invalid="true" />
+                            </div>
+
+                            <br />
+                            <div>
+                                <label for="email">
+                                    <span class="red">*</span> דואר אלקטרוני:
+                                </label>
+                                <br />
+                                <input type="email" id="email" name="email"
+                                       required aria-required="true" autocomplete="on" title="הכנס את הדואר האלקטרוני שלך" aria-invalid="true" />
+                            </div>
+                            <br />
+                            <div>
+                                <label for="phonenumber">
+                                    <span class="red">*</span> מספר טלפון:
+                                </label>
+                                <br />
+                                <input type="number" id="phonenumber" name="phonenumber"
+                                       required aria-required="true" autocomplete="on" aria-describedby="int1" title="הכנס את מספר הטלפון שלך" aria-invalid="true" />
+
+                                <p id="int1">הכנס מספרים בלבד! </p>
+                            </div>
+                            <br />
+                            <div>
+                                <label for="topic">
+                                    <span class="red">*</span> סוג פניה:
+                                    <br />
+                                    <select id="topicselect" name="topicselect" placeholder="בחר סוג פניה" required aria-required="true" title="בחר את נושא הפניה"
+                                            aria-invalid="true">
+                                        <option value="1" disabled selected>בחר את נושא פניה</option>
+                                        <option value="2">המלצה על מתכון חדש</option>
+                                        <option value="3">בעיה במתכון קיים</option>
+                                        <option value="4">שאלות שונות</option>
+                                        <option value="5">אחר</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <br />
+
+                            <div>
+                                <label for="content">
+                                    <span class="red">*</span> תוכן ההודעה:
+                                </label>
+                                <br />
+                                <textarea id="content" name="content" rows="10" required aria-required="true" title="הכנס/י את תוכן ההודעה" aria-invalid="true"></textarea>
+                            </div>
+                            <br />
+                            <div>
+                                <input type="submit" name="submit1" value="שליחה">
+                                <input type="reset" name="reset1" value="ניקוי טופס">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </article>
+
+            <button onclick="scrollToTop()" id="scroll-btn" title="Go to top">⮝</button>
+
+            <footer>
+                <nav role="navigation" aria-label="תפריט ניווט משני לעמודים: צור קשר, מפת אתר ואודות">
+                    <ul>
+                        <li>
+                            <a href="contactus.html">צור קשר</a>
+                        </li>
+                        <li>
+                            <a href="map.html">מפת אתר</a>
+                        </li>
+                        <li>
+                            <a href="about.html">אודות</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="DrinkIt"> ©️ כל הזכויות שמורות לצוות Drink-it  </p>
+            </footer>
+        </div>
+</main>
+</body>
+</html>
