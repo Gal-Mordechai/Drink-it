@@ -1486,7 +1486,7 @@ crueImg .aboutCenter ul {
     vertical-align: middle;
 }
 #up{
-    bottom:100px;
+    bottom:110px;
 }
 
 .scroll-down {
@@ -1497,7 +1497,7 @@ crueImg .aboutCenter ul {
 
 .scroll-down {
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     left: 50%;
     margin-left: -16px;
     display: block;
