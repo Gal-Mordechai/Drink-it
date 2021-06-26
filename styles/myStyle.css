@@ -1511,7 +1511,7 @@ crueImg .aboutCenter ul {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     transform: scale(1);
-    margin-bottom:-50px;
+    margin-bottom:-100px;
 }
 
     .scroll-down:before {
