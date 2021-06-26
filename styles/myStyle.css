@@ -1,0 +1,1560 @@
+﻿@font-face {
+    font-family: 'felix007-medium-webfont';
+    src: url('../fonts/felix007-medium-webfont.ttf') format('truetype');
+}
+body {
+    direction: rtl;
+    font-family: felix007-medium-webfont;
+    text-align: center;
+    font-size: 20px;
+    margin-left:50px;
+    margin-right:50px;
+
+}
+.h1home {
+    color: black;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 60px;
+    height: 100px;
+    text-align: center;
+    margin-top:100px;
+}
+.h1glass {
+    color: #0097BD;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 80px;
+    height: 100px;
+    text-align: center;
+    margin: 111px;
+}
+
+/*עמוד הבית*/
+
+.imghome{
+    margin-top:-100px;
+}
+.hhomepage {
+    color: black;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 60px;
+    height: 100px;
+    padding-left: 330px;
+    text-align:right;
+}
+.h2homepage {
+    color: black;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 50px;
+    height: 100px;
+    padding-left: 200px;
+    text-align: right;
+}
+
+
+/*אהבה בין פרי לאלכוהול מתחילה כאן */
+
+.imgFirst {
+    width: 100%;
+    margin-top: 35px;
+    position:relative;
+    z-index:-1;
+}
+
+.textOnImg {
+    position: relative;
+    margin-right: 10px;
+    top: 300px;
+    text-align: right
+}
+
+/*כפתורים וחצים למעבר בין תמונות הרקע של אהבה בין פרי לאלכוהול*/
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -104px;
+    font-weight: bold;
+    transition: 1.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+    margin-right: 700px;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/*כפתורי מעבר */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot2 {
+    cursor: not-allowed;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/*היתרונות של פירות במשקה אלכוהולי*/
+
+.stripbenefits {
+    background-color: #F9D0B5;
+    height: inherit;
+    margin-top: 100px;
+}
+
+.fontSize {
+    font-size: 25px;
+}
+
+/*מיקום מלל יתרונות*/
+#itronot {
+    text-align: right;
+    font-size: 25px;
+    padding-right: 470px;
+}
+
+/*תמונה ימין ביתרונות*/
+#imgItronontRight {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 272px;
+    height: 261px;
+    margin-left: -100px;
+}
+
+/*תמונה שמאל ביתרונות*/
+#imgItronontLeft {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 278px;
+    height: 261px;
+    margin-top: -286px
+}
+
+/*כפתור תותיקס ביתרונות*/
+#buttonRight {
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    background-color: #bf5a3afa;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: -7px;
+    width: 205px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 170px;
+    margin-right: 30px;
+    float: right;
+   box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+/*כפתור דאקירי תות ביתרונות*/
+#buttonLeft {
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    background-color: #bf5a3afa;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: -7px;
+    width: 205px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-top: -123px;
+    float: left;
+    box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+
+/*כפתור מעבר לתותיקס ביתרונות*/
+.divmelel{
+    z-index:-1;
+    margin-bottom:-160px;
+    font-size:30px;
+}
+#buttonRight p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+    #buttonRight p:after {
+        content: ' \226A';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+#buttonRight:hover p {
+    padding-right: 25px;
+}
+
+    #buttonRight:hover p:after {
+        opacity: 1;
+        right: 0;
+    }
+
+/*כפתור מעבר לדאקירי תות ביתרונות*/
+
+#buttonLeft p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+    #buttonLeft p:after {
+        content: ' \226B';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -20px;
+        transition: 0.5s;
+    }
+
+#buttonLeft:hover p {
+    padding-left: 25px;
+}
+
+    #buttonLeft:hover p:after {
+        opacity: 1;
+        left: 0;
+    }
+
+/*בואו ללמוד על */
+
+.img0 {
+    width: 200px;
+    height: 193px;
+    margin-top: 50px;
+}
+
+.img1 {
+    width: 226px;
+    height: 226px;
+    margin-top: -204px;
+    opacity: 0;
+}
+
+    .img1:hover {
+        opacity: 1;
+    }
+
+.strip3 {
+    background-color: coral;
+    height: inherit;
+    margin-top: 20px;
+}
+
+.imgpositionleft {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 325px;
+    margin-top: -109px;
+    height: 466px
+}
+
+.imgpositionright {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 343px;
+    margin-top: -109px;
+    height: 467px;
+}
+
+/*הצצה למתכונים שלנו*/
+.strip1 {
+    background-color: #FFB4B5;
+    height: inherit;
+    margin-top: 20px;
+}
+
+.mikom1 {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    z-index: 4;
+}
+
+.A {
+    font-size: 52px;
+}
+
+.B {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:-30px;
+}
+
+.imgmomlatz {
+    width: 300px;
+    height: 300px;
+    margin-top: 6px;
+}
+
+.ofhidden {
+    overflow: hidden;
+}
+
+.imgZoom1:hover .imgmomlatz {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/*מידע למתחילים*/
+
+/*כוסות*/
+
+/*כוסות - סטריפים*/
+
+.stripglass {
+    background-color: #DCF4F3;
+    height: inherit;
+    margin-top: 20px;
+}
+.stripFirstGlass {
+    background-color: white;
+    width:50%;
+    box-shadow: 0px 0px 10px rgba(170,170,170,0.9);
+    margin-right:350px;
+    height:60px;
+    font-size:30px;
+    margin-top:-40px;
+    margin-bottom:60px;
+
+}
+
+.mikomglass {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    z-index: 4;
+}
+
+/*כוסות מעברי עכבר*/
+
+.img {
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+}
+
+.img:hover {
+        opacity: 0.15;
+    }
+
+.underglass {
+    z-index: -1;
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    margin: 30px;
+    font-family: 'Segoe UI';
+}
+
+.img:focus{
+    border-color:black;
+    opacity:0.15;
+}
+.img:hover .underglass {
+    z-index: 5;
+}
+
+
+
+/*עמוד צור קשר*/
+#zorkeser {
+    border: 2px solid #ccc;
+    width: 502px;
+    background-color: white #F7DEAE;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 0  5px rgba(0,0,0,0.9);
+    background-color: white;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    resize: none;
+    text-align: right;
+}
+
+.contact {
+    font-size: 80px;
+    color: #C28083;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+}
+
+#pnia {
+    background-color: #c2808375;
+    padding: 24px;
+    font-size: 25px;
+}
+
+.red {
+    color: red;
+}
+
+/*אודות*/
+ul{
+    list-style-type: disc;
+}
+
+/*.imgus {
+    width: 200px;
+    height: 200px;
+}*/
+
+.us {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+/*תפוז*/
+.background {
+    background-color: white;
+}
+
+.mikom { /*מיקום עיגולים*/
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    text-align: center;
+}
+
+#section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.tapoz {
+    color: rgb(204,93,18);
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 100px;
+}
+/*הורדת מתכון תפוז*/
+.downloadT {
+    color: black;
+    text-decoration-line: underline;
+    background-color: rgb(255,193,131);
+    font-family: felix007;
+    margin-right: 45px;
+    border-radius: 10px;
+}
+
+.imgfocus {
+    display: inline-block;
+}
+
+.imgMatcon {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+
+    .imgMatcon:hover {
+        opacity: 0.2;
+    }
+    .imgMatcon:focus {
+        opacity: 0.01;
+    }
+
+
+
+.matconim { /*קובע את האיזור המתכון*/
+    height: 650px;
+    font-family: felix007;
+    font-size: 25px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+span { /*כותרות במתכונים*/
+    font-weight: bold;
+    font-size: 30px;
+}
+
+video { /*גודל הסרטונים*/
+    width: 350px;
+    height: 600px;
+    float: left;
+}
+
+
+.styleMa { /*משותף לכל הריבועים*/
+    background-color: rgb(255,193,131);
+    border-radius: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    box-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+}
+
+/*----------*/
+
+/*מתכון סקרודרייב*/
+
+#styleMetrachS { /*גודל ריבוע מצרכים סקרודרייב*/
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+}
+
+#styleAchanaS { /*גודל ריבוע אופן הכנה סקרודרייב*/
+    width: 220px;
+    height: 335px;
+    margin-right: 261px;
+    margin-top: -167px;
+}
+
+/*----------*/
+
+/*מתכון הארווי*/
+
+#styleMetrachA { /*גודל ריבוע מצרכים הארווי*/
+    width: 238px;
+    height: 310px;
+}
+
+#styleAchanaA { /*גודל ריבוע אופן הכנה הארווי*/
+    width: 375px;
+    height: 297px;
+    margin-right: 280px;
+    margin-top: -232px;
+}
+
+/*----------*/
+
+/*מתכון אחרי הגשם*/
+
+#styleMetrachG { /*גודל ריבוע מצרכים אחרי הגשם*/
+    width: 238px;
+    height: 378px;
+}
+
+#styleAchanaG { /*גודל ריבוע אופן הכנה אחרי הגשם*/
+    width: 302px;
+    height: 375px;
+    margin-right: 278px;
+    margin-top: -296px;
+}
+
+/*----------*/
+
+/*מתכון חכם בשמש*/
+
+#styleMetrachC { /*גודל ריבוע מצרכים חכם בשמש*/
+    width: 238px;
+    height: 471px;
+}
+
+#styleAchanaC { /*גודל ריבוע אופן הכנה חכם בשמש*/
+    width: 362px;
+    height: 591px;
+    margin-right: 270px;
+    margin-top: -392px;
+}
+
+/*----------*/
+
+.cotertTapoz { /*רקע לכותרת לשם הקוקטייל*/
+    background-color: rgb(248,209,182);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#itronotTapoz { /*ריבוע יתרונות התפוז*/
+    background-color: rgb(255,193,131);
+    font-size: 30px;
+    padding: 10px;
+    margin-right:10%;
+    margin-left:10%;
+    box-shadow: 5px 5px 3px rgba(170,170,170,0.9);
+    text-align: center;
+}
+
+.imgMatcon:hover  {
+    z-index: 6;
+}
+
+/*תות*/
+
+.strawberry {
+    font-family: felix007;
+    color: #E85A5A;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 100px;
+}
+span { /* כותרות במתכונים*/
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 17px;
+}
+
+.styleMa1 { /*משותף לכל הריבועים*/
+    background-color: #FF6363;
+    border-radius: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    box-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+}
+/*הורדת הקובץ תות*/
+.download {
+    color: black;
+    text-decoration-line: underline;
+    background-color: #FF6363;
+    font-family: felix007;
+    margin-right: 45px;
+    border-radius: 10px;
+}
+
+
+/*----------*/
+
+/*מתכון תותיקס*/
+
+#styleMetrachS1 { /*גודל ריבוע מצרכים תותיקס*/
+    width: 200px;
+    height: 408px;
+    margin: 10px;
+}
+
+#styleAchanaS1 { /*גודל ריבוע אופן הכנה תותיקס*/
+    width: 245px;
+    height: 547px;
+    margin-right: 261px;
+    margin-top: -350px;
+}
+
+/*----------*/
+
+/*מתכון דאקירי תות*/
+
+#styleMetrachA1 { /*גודל ריבוע מרכיבים דאקירי תות*/
+    width: 219px;
+    height: 423px;
+    margin: 10px;
+}
+
+#styleAchanaA1 { /*גודל ריבוע אופן הכנה דאקירי תות*/
+    width: 303px;
+    height: 357px;
+    margin-right: 261px;
+    margin-top: -350px;
+}
+
+/*----------*/
+
+/*מתכון בלסמיקו */
+
+#styleMetrachG1 { /*גודל ריבוע מרכיבים בלסמיקו*/
+    width: 238px;
+    height: 417px;
+}
+
+#styleAchanaG1 { /*גודל ריבוע אופן הכנה בלסמיקו*/
+    width: 302px;
+    height: 410px;
+    margin-right: 278px;
+    margin-top: -296px;
+}
+
+/*----------*/
+
+/*מתכון מוחיטו תות*/
+
+#styleMetrachC1 { /*גודל ריבוע מרכיבים מוחיטו תות*/
+    width: 238px;
+    height: 380px;
+}
+
+#styleAchanaC1 { /*גודל ריבוע אופן הכנה מוחיטו תות*/
+    width: 362px;
+    height: 561px;
+    margin-right: 270px;
+    margin-top: -326px;
+}
+
+/*----------*/
+
+.cotert { /*רקע לכותרת לשם הקוקטייל*/
+    background-color: #FF6363;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#itronotTot { /*ריבוע יתרונות התות*/
+    background-color: #E37070;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 3px rgba(170,170,170,0.9);
+    text-align: center;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*מפת אתר*/
+.positionyaar{
+    margin-top:20px;
+}
+
+.ulMap { /*רשימה*/
+    display: flex;
+    text-align: right;
+    margin: 20px;
+    display: inline-block;
+    list-style-position: outside;
+    vertical-align: text-top;
+    
+}
+
+#Dovdevan {
+    list-style-image: url('../photos/map/דובדבן.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#tot {
+    list-style-image: url('../photos/map/תות.png');
+    margin-right: 20px;
+}
+
+#kivi {
+    list-style-image: url('../photos/map/קיווי.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#tapozli {
+    list-style-image: url('../photos/map/תפוז.png');
+    margin-right: 20px;
+}
+
+#cocos {
+    list-style-image: url('../photos/map/קוקוס.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#pasiflora {
+    list-style-image: url('../photos/map/פסיפלורה.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#petel {
+    list-style-image: url('../photos/map/פטל.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#lizi {
+    list-style-image: url("../photos/map/ליצ'י.png");
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#limon {
+    list-style-image: url('../photos/map/לימון.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#hamoziot {
+    list-style-image: url('../photos/map/חמוציות.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#eshcolit {
+    list-style-image: url('../photos/map/אשכולית.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#ananas {
+    list-style-image: url('../photos/map/אננס.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#ocmania {
+    list-style-image: url('../photos/map/אוכמניות.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#mar {
+    list-style-image: url('../photos/map/מר.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#matok {
+    list-style-image: url('../photos/map/מתוק.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#hamotz {
+    list-style-image: url('../photos/map/חמוץ.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#cosot {
+    list-style-image: url('../photos/map/כוסות.png');
+    margin-right: 20px;
+}
+
+#alcohol {
+    list-style-image: url('../photos/map/סוגי אלכוהול.png');
+    cursor: no-drop;
+    margin-right: 20px;
+}
+
+#polot {
+    list-style-image: url('../photos/map/כלים ופעולות.png');
+    margin-right: 20px;
+}
+
+#list {
+    margin-right: 100px;
+    padding: 0 30px 0 30px;
+    list-style-position: inside;
+}
+
+
+#tot:hover {
+    text-decoration-line: underline;
+}
+
+#tapozli:hover {
+    text-decoration-line: underline;
+}
+
+#cosot:hover {
+    text-decoration-line: underline;
+}
+
+#polot:hover {
+    text-decoration-line: underline;
+}
+
+
+/*פירורי לחם מפת אתר 
+*/
+.right {
+    text-align: right;
+    margin-top:100px;
+}
+
+.kishor {
+    text-decoration-line: underline;
+}
+
+.txtSBS {
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+}
+/*  כותרות מפת אתר 
+*/
+.hMap {
+    color: #2CB482;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    margin-bottom: -10px;
+    margin-top:-20px;
+}
+
+.liC {
+    font-size: 30px;
+    list-style-type: none;
+    text-align: left;
+}
+
+
+/*כלים ופעולות*/
+
+.tools {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    transition: all 0.3s ease;
+    border-radius: 180px;
+    
+}
+    .tools:hover {
+        box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+    }
+
+.text {
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.div {
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    text-align: center;
+}
+
+
+#toolsAction {
+    color: #2492C9;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    font-size: 80px;
+    height: 100px;
+    margin-top: 130px;
+}
+
+.sectionStrip { /*סטריפים*/
+    background-color: #ECF7FA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section1 { /* סטריפ ראשון*/
+    background-color: #DCF4F3;
+    height: 400px;
+    margin-top: -50px;
+    margin-bottom:30px;
+}
+
+.strip {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    margin-top: 20px;
+    width: 400px;
+    height: 250px;
+    z-index: 4;
+}
+
+.imgAction:hover{
+    opacity: 0.15;
+}
+.imgAction:focus {
+    opacity: 0.15;
+}
+
+    .strip2 {
+        display: inline-block;
+        position: relative;
+        margin: 20px;
+        z-index: 4;
+    }
+
+
+.h2 { /* צבע וגודל לכותרת שנייה*/
+    color: #279ED9;
+    text-shadow: 1px 1px 3px rgba(170,170,170,0.7);
+    font-size: 60px;
+    height: 100px;
+    margin-bottom: -20px;
+    margin-top: 100px;
+}
+
+.imgAction {
+    z-index: 1;
+}
+
+.cup {
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+}
+
+    .cup:hover  {
+        opacity: 0.15;
+    }
+    .cup:focus{
+        opacity:0.15;
+    }
+
+.under {
+    z-index: -1;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    right: 10px;
+    font-family: 'Segoe UI';
+    margin: 20px;
+}
+
+.under1 {
+    z-index: -1;
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    margin: 30px;
+    font-family: 'Segoe UI';
+}
+
+.imgAction:hover .under {
+    z-index: 4;
+}
+
+.imgAction:focus .under{
+    z-index:4;
+}
+
+.cup:hover .under1 {
+    z-index: 5;
+}
+
+/*back to top*/
+#scroll-btn {
+    background-color: white;
+    border: medium none;
+    border-radius: 30px;
+    bottom: 20px;
+    color: gray;
+    cursor: pointer;
+    display: none;
+    outline: medium none;
+    /* padding: 10px;*/
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 25px;
+    /* border-color:gainsboro;
+   border-style:solid;*/
+    box-shadow: rgba(170,170,170,0.9) 0px 0px 10px;
+    text-shadow: initial;
+}
+
+    #scroll-btn:hover, #scroll-btn:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+    }
+
+/*    תפריט עליון */
+a, a:hover {
+    color: #313C56;
+    text-decoration: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: felix007;
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    /*width: 1366px;
+    margin: 0 auto;*/
+    /*margin-top: -200px;*/
+    /*background-color: #f8f8f8;
+    overflow: hidden;*/
+}
+
+a:focus:hover {
+   font-size:25px;
+}
+
+a:focus:active {
+    color: #313C56;
+}
+
+.notActive {
+    cursor: not-allowed;
+}
+
+
+/*/design nav/*/
+.currentPage {
+    font-weight: 900;
+    box-shadow: 3px 3px 3px rgba(170,170,170,0.7)/* /צל למסגרת של תפריט ניווט/*/
+}
+
+header {
+    z-index: 10;
+    /*/ממקם את התפריט לפני כל התצוגה/*/ 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 95%;
+    background-color: #f8f8f8;
+    box-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+    background-position: top center;
+    height: 90px;
+   
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+    nav ul {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            width: 100%;
+            padding-top: 16px;
+            top: 20px;
+            left: 0;
+        }
+
+/*/nav hover/*/
+nav ul li:hover > ul {
+    /*/מיקום התבניות שהתפריט נפתח/ */
+    display: block;
+    width: 83%;
+    padding-top: 0;
+    padding-right: 0px;
+    margin-top: 13px;
+    margin-left: 29px;
+}
+
+/*/line nav/*/
+nav ul li, .homepageSection ul li {
+    display: inline-block;
+    float: right;
+}
+
+/*/color and design nav/*/
+nav ul li {
+    position: relative;
+    margin-top: 50px;
+    display: block;
+    color: #313C56;
+    text-decoration: none;
+    text-align: center;
+    border-left: 1px solid #313C56;
+    flex: 1;
+    font-size:25px;
+   
+}
+
+nav ul li a:hover {
+    font-weight: 900;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+remove from last item
+nav li:last-child {
+    border: none;
+}
+
+
+nav ul li ul li a {
+    border: none;
+    background-color: #ffffff;
+    margin: 0;
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+
+nav ul li ul li {
+    /*    /עיצוב פתיחת תפריט במעבר עכבר/
+*/ border: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 2px solid #cad2d3;
+    width: 100%;
+    /*margin-top: 1px;*/
+}
+
+    nav ul li ul li a:hover {
+        /*/הגדלת אותיות במעבר עכבר/ */
+        font-weight: 400;
+        font-size: 30px;
+        text-align: right;
+        
+    }
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+/*עבור לתוכן
+*/    #skip a {
+        position: absolute;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            background: #f8f8f8;
+            border: 1px solid #313C56
+        } 
+/*לוגן האתר*/
+#logo{
+    margin-right: -72px;
+    height: 97px;
+    display: inline-block;
+    margin-top: -65px;
+    width: 319px;
+    margin-bottom: -15px
+}
+
+.noClick {
+    cursor: default;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a, a:hover {
+   /* /צבע כתב תפריט ניווט/*/ 
+    color: #000000;
+    text-decoration: none;
+}
+
+.listnav {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 104%;
+    vertical-align: baseline;
+    background: #ffffff;
+    font-family: Arial;
+}
+
+button:focus{
+    border-color:black;
+    border-style:solid;
+}
+
+/*footer hen*/
+footer {
+    height: 100px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    border-top: solid;
+    margin-top: 70px;
+    margin-bottom:10px;
+}
+
+footer nav {
+    width: 30%;
+    height: initial;
+    margin-top: 40px;
+}
+
+    footer nav ul {
+        width: 100%;
+        height: initial;
+    }
+
+        footer nav ul li {
+            margin-top: 0;
+            height: 20px;
+        }
+
+            footer nav ul li:hover {
+                font-size: 30px;
+            }
+
+footer p {
+    font-size:15px;
+    font-weight: 400;
+    float: right;
+    width: 1366px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    margin-bottom: 0;
+}
+
+
+#DrinkIt {
+    text-align: center;
+    padding-right: 74px;
+    padding-bottom:45px;
+}
+/*אודות האתר 
+*/
+
+.imghit{
+    margin-top:-20px;
+}
+
+
+#aboutTXT {
+    width: 75%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+    #aboutTXT .h2Odot {
+        background: #5369a7;
+        text-align: center;
+        padding: 20px;
+        font-size: 35pt;
+        color: white;
+    }
+
+.aboutCenter {
+    width: 72%;
+    margin: 0 auto;
+    padding: 25px 15px;
+    font-size: 16pt;
+}
+
+    .aboutCenter ul li a {
+        text-decoration: underline;
+    }
+
+        .aboutCenter ul li a:hover {
+            text-decoration: underline;
+            font-weight: 900;
+        }
+
+#aboutArticle #aboutTXT .crueImg .aboutCenter ul li a {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.crueName {
+    font-weight: 700;
+    font-size: 14pt;
+    margin-top: 13.5%;
+    position: absolute;
+    margin-right: 4.5%
+}
+
+crueImg .aboutCenter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 60px -100px;
+}
+
+
+
+#cotertOdot {
+    color:darkblue;
+    text-shadow: 3px 3px 3px rgb(170 170 170 / 70%);
+    font-size: 80px;
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:-14px;
+}
+
+.us {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+.usText {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+
+.pSCROLL {
+    color: black;
+    font-family: arial;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#up{
+    bottom:150px;
+}
+
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #000000;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1);
+    margin-bottom:30px;
+}
+
+    .scroll-down:before {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 6px);
+        transform: rotate(-45deg);
+        display: block;
+        width: 12px;
+        height: 12px;
+        content: "";
+        border: 2px solid #000000;
+        border-width: 0px 0 2px 2px;
+    }
+
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+ 
